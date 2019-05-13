@@ -1,0 +1,39 @@
+
+.hero {
+    .row {
+      background: url('https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1031&q=80') center;
+      background-size: cover;
+      height: 500px;
+      position: relative;
+      top: -110px;;
+      justify-content: center;
+      .slogan {
+        text-align: center;
+        max-width: 800px;
+        color: white;
+        padding: 10px;
+        position: relative;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        h2 {
+          font-family: $font-serif;
+          font-style: italic;
+          font-size: 30px;
+        }
+        h1 {
+          margin-top: -10px;
+          text-transform: uppercase;
+          font-size: 60px;
+        }
+        button {
+          margin-top: -20px;
+          padding: 20px 30px;
+          font-size: 22px;
+          font-weight: bold;
+          color: white;
+          background-color: $highlight-color;
+          border: none;
+        }
+      }
+    }
+  }

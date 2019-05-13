@@ -1,0 +1,25 @@
+header {
+    ul {
+        background-color: green;
+        list-style: none;
+        display: flex;
+        flex-flow: row-wrap;
+        justify-content: flex-end;
+        li {
+            display: inline-block;
+        }
+        a {
+            line-height: 50px;
+            padding: 0 20px;
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+                background: #7F7F7F;
+                color: white;
+                transition: 0.5s;
+            }
+        }
+    }
+}
