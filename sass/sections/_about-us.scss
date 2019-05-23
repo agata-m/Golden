@@ -1,7 +1,48 @@
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "layout";
-@import "components/form_field";
-@import "section/registration_form";
-@import "pages/registration";
+.about-us {
+    text-align: center;
+    .row {
+      margin-bottom: 80px;
+      position: relative;
+      .intro-right {
+        text-align: right;
+      }
+      .intro-left {
+        text-align: left;
+      }
+      .circle-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          border-radius: 50%;
+          border: 6px solid #F0F0F0;
+          height: 200px;
+          width: 200px;
+          background: center;
+          object-fit: cover;
+        }
+      }
+      .circle-fill {
+        background-color: $highlight-color;
+        border-radius: 50%;
+        border: 6px solid #F0F0F0;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          color: white;
+        }
+      }
+      .vl {
+        border-left: 3px solid #F0F0F0;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 0;
+        z-index: -1;
+      }
+    }
+  }  

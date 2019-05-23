@@ -1,7 +1,51 @@
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "layout";
-@import "components/form_field";
-@import "section/registration_form";
-@import "pages/registration";
+.our-team {
+    width: 100%;
+    background-color: #F7F7F7;
+   .container {
+        text-align: center;
+        flex-direction: column;
+        .team-photos {
+            display: flex;
+            flex-direction: row;
+            p {
+                font-weight: bold;
+                font-size: 18px;
+                .position {
+                    color: grey;
+                    font-weight: normal;
+                }
+            }
+            .circle-photo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    border-radius: 50%;
+                    border: 6px solid white;
+                    height: 200px;
+                    width: 200px;
+                    background: center;
+                    background-size: cover;
+                }
+            }
+            .sm-icons {
+                flex-direction: row;
+                justify-content: center;
+                .team-icons {
+                    border-radius: 50%;
+                    border: #414141 3px solid;
+                    color: #414141;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,53 +1,71 @@
-
-.gallery {
-    text-align: center;
+.portfolio {
+    background-color: #F7F7F7;
     width: 100%;
-    h1 {
-        text-transform: uppercase;
-    }
-    article {
-        padding-bottom: 20px;
-    }
-    .pic {
-        position: relative;
-        padding: 0;
-        img {
-            display: block;
-            height: 300px;
-            object-fit: cover;
-            width: 100%;
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 0;
+        h1 {
+            text-transform: uppercase;
         }
-        .layer {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            position: absolute;
-            top: 0;
-            left: 0;
-            justify-content: flex-end;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            .icons {
-                background-color: #FFFEEF;
-                border-radius: 20%;
-                color: #414141;
-                width: 50px;
-                height: 50px;
+        h3 {
+            padding-bottom: 20px;
+        }
+        .pic {
+            position: relative;
+            img {
+                display: block;
+                height: 400px;
+                object-fit: cover;
+                max-width: 100%;
+            }
+            .layer {
+                padding: 0;
+                height: 400px;
+                width: 100%;
                 display: flex;
+                flex-wrap: wrap;
+                position: absolute;
+                top: 20px;
+                left: 0;
                 justify-content: center;
                 align-items: center;
-                margin: 10px;
-                margin-left: 5px;
-                .fa {
-                    font-size: 40px;
+                .icons {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid rgba(252, 230, 109, 0.685);
+                    color: rgba(252, 230, 109, 0.685);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                }
+            }
+            .header-space {
+                width: 100%;
+                height: 100px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 18px;
+                .header-class {
+                    color: grey;
+                    font-family: $font-serif;
+                    font-weight: normal;
+                    font-size: 16px;
+                    font-style: italic;
+                    margin-top: 10px;
                 }
             }
         }
-    }      
+    }
 }
 
 @media (min-width: 768px) {
-    .gallery {
+    .portfolio {
         .pic {
             &:hover .layer {
                 opacity: 1;
@@ -56,7 +74,7 @@
                 justify-content: center;
                 align-items: center;
                 align-content: center;
-                background: rgba(0, 0, 0, .35);
+                background: rgba(0, 0, 0, .5);
                 color: #fff;
                 opacity: 0;
                 transition: all .3s ease-in-out;
@@ -65,9 +83,6 @@
                     height: 30px;
                     margin: 10px;
                     line-height: 30px;
-                    .fa {
-                        font-size: 20px;
-                    }
                 }
             }
         }

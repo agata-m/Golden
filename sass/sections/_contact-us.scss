@@ -1,7 +1,28 @@
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "layout";
-@import "components/form_field";
-@import "section/registration_form";
-@import "pages/registration";
+.contact-us {
+    background: url('https://images.pexels.com/photos/1787044/pexels-photo-1787044.jpeg?cs=srgb&dl=black-and-white-buildings-city-1787044.jpg&fm=jpg') center;
+    position: relative;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 50px;
+    text-align: center;
+    h1 {
+      color: white;
+      padding-top: 20px;
+    }
+    .contact-form {
+      margin-top: 30px;
+      .row {
+        flex-direction: column;
+        width: 100%;
+        input[type=text] {
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+  }

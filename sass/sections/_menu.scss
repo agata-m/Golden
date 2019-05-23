@@ -1,25 +1,36 @@
 header {
-    ul {
-        background-color: green;
-        list-style: none;
-        display: flex;
-        flex-flow: row-wrap;
-        justify-content: flex-end;
-        li {
+    nav {
+      .golden {
+        font-family: "Cookie", italic;
+        font-size: 50px;
+        text-align: left;
+        margin-top: 20px;
+        padding: 0;
+        color: $highlight-color;
+      }
+      .row {
+        ul {
+          display: flex;
+          justify-items: flex-end;
+          list-style: none;
+          li {
             display: inline-block;
-        }
-        a {
-            line-height: 50px;
+          }
+          a {
+            line-height: 40px;
             padding: 0 20px;
             display: block;
             color: #ccc;
             text-decoration: none;
             text-transform: uppercase;
+            margin-top: 15px;
             &:hover {
-                background: #7F7F7F;
-                color: white;
-                transition: 0.5s;
+              background: #7F7F7F;
+              color: white;
+              transition: 0.5s;
             }
+          }
         }
+      }
     }
-}
+  }
