@@ -2,26 +2,40 @@
     background: url('https://images.pexels.com/photos/1787044/pexels-photo-1787044.jpeg?cs=srgb&dl=black-and-white-buildings-city-1787044.jpg&fm=jpg') center;
     position: relative;
     background-size: cover;
-    height: 500px;
-    margin-bottom: 50px;
+    max-height: 800px;
+    padding-top: $section-margin;
+    padding-bottom: $section-margin;
     text-align: center;
     h1 {
       color: white;
-      padding-top: 20px;
+      margin-top: 0;
     }
     .contact-form {
       margin-top: 30px;
-      .row {
-        flex-direction: column;
-        width: 100%;
-        input[type=text] {
-          padding: 12px 20px;
-          margin: 8px 0;
-          display: inline-block;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          text-transform: uppercase;
-          font-weight: bold;
+      .container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        .form-row {
+          flex-direction: row;
+          input[type=text] {
+            width: 100%;
+            max-height: 100%;
+            padding: 12px 20px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-transform: uppercase;
+          }
+          .message {
+            display: block;
+            height: 100%;
+          }
+        }
+        .btn-row {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
       }
     }

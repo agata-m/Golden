@@ -1,12 +1,12 @@
 .services {
   text-align: center;
-  margin: $section-margin-bottom;
-  h1, h3 {
-    margin: 0;
+  margin-bottom: $section-margin;
+  h1 {
     padding: 0;
   }
-  h1 {
-    margin-bottom: 10px;
+  h3 {
+    margin-top: 0;
+    padding-top: 0;
   }
   .row {
     flex-direction: column;
@@ -16,7 +16,7 @@
       margin-bottom: 15px;
     }
     p {
-      margin-top: 50px;
+      margin-top: 30px;
       display: flex;
       height: 80px;
       width: 80px;
@@ -34,6 +34,7 @@
     article {
       line-height: $line-height;
       color: grey;
+      font-family: $font-serif;
     }
   }
 }
@@ -48,4 +49,5 @@
    color: grey;
    font-style: italic;
    font-family: $font-serif;
+   font-weight: lighter;
 }

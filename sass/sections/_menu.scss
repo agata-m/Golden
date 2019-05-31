@@ -1,5 +1,6 @@
 header {
-    nav {
+    .container {
+      justify-content: space-between;
       .golden {
         font-family: "Cookie", italic;
         font-size: 50px;
@@ -10,8 +11,6 @@ header {
       }
       .row {
         ul {
-          display: flex;
-          justify-items: flex-end;
           list-style: none;
           li {
             display: inline-block;
