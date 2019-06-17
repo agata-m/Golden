@@ -17,7 +17,7 @@
         flex-direction: row;
         .form-row {
           flex-direction: row;
-          input[type=text] {
+          input, textarea {
             width: 100%;
             max-height: 100%;
             padding: 12px 20px;
@@ -27,9 +27,9 @@
             border-radius: 4px;
             text-transform: uppercase;
           }
-          .message {
-            display: block;
-            height: 100%;
+          textarea {
+            display: flex;
+            justify-content: stretch;
           }
         }
         .btn-row {
@@ -40,3 +40,16 @@
       }
     }
   }
+
+@media (min-width: 768px) {
+  .contact-us {
+    .contact-form {
+      .form-row {
+        .message {
+          display: inline-block;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}

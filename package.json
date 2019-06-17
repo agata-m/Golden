@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
-    "test:html": "nu-html-checker *.html",
+    "test:html": "nu-html-checker index.html",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdir -p sass/components sass/pages sass/sections css vendor images js fonts docs",
     "init:files": "touch index.html styleguide.html sass/style.scss sass/_layout.scss sass/_mixins.scss sass/_normalize.scss sass/_variables.scss js/script.js",

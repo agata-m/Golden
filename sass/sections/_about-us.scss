@@ -1,28 +1,39 @@
 .about-us {
-    text-align: center;
     position: relative;
-    margin: $section-margin;
+    margin-top: $section-margin;
+    margin-bottom: $section-margin;
+    h1, h3 {
+      text-align: center;
+    }
     h3 {
       margin-bottom: 40px;
     }
     .row {
-      margin-bottom: 80px;
-      position: relative;
+      margin-bottom: 50px;
+
       h4 {
+        margin-top: -10px;
         margin-bottom: 10px;
         font-size: 18px;
       }
+      .intro-right, .intro-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
       .intro-right {
-        text-align: right;
         line-height: $line-height;
+        padding-right: 20px;
+        text-align: left;
         P {
           color: grey;
           font-family: $font-serif;
         }
       }
       .intro-left {
-        text-align: left;
         line-height: $line-height;
+        padding-left: 20px;
+        text-align: right;
         P {
           color: grey;
           font-family: $font-serif;
@@ -31,15 +42,19 @@
       .circle-photo {
         display: flex;
         justify-content: center;
-        align-items: center;
+        padding: 0;
         img {
           border-radius: 50%;
           border: 6px solid #F0F0F0;
-          height: 200px;
-          width: 200px;
+          max-height: 200px;
+          max-width: 200px;
           background: center;
           object-fit: cover;
         }
+      }
+      .yellow-circle {
+        display: flex;
+        justify-content: flex-end;
       }
       .circle-fill {
         background-color: $highlight-color;
@@ -48,6 +63,8 @@
         height: 200px;
         width: 200px;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         p {
           font-size: 20px;
           font-weight: bold;
@@ -56,8 +73,45 @@
       }
     }
     .vl {
+      display: none;
+    }
+  }  
+
+@media (min-width: 768px) {
+  .about-us {
+    h3 {
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .row {
+      margin-bottom: 80px;
+      h4 {
+        margin-top: 0;
+      }
+      .circle-photo {
+        img {
+          height: 200px;
+          width: 200px;
+        }
+      }
+      .intro-left, .intro-right {
+        padding: 0;
+      }
+      .intro-left {
+        text-align: left;
+      }
+      .intro-right {
+        text-align: right;
+      }
+      .yellow-circle {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .vl {
+      display: inline-block;
       border-left: 3px solid #F0F0F0;
-      height: 1300px;
+      height: 1200px;
       position: absolute;
       left: 50%;
       margin-left: -3px;
@@ -65,3 +119,4 @@
       z-index: -1;
     }
   }  
+}

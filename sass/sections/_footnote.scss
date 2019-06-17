@@ -1,9 +1,10 @@
 .footnote {
-  .container {
-    align-items: center;
-    justify-content: center;
+  .row {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-right: 0;
     .copyrights {
-      text-align: center;
       background-color: white;
       height: auto;
       font-size: 12px;
