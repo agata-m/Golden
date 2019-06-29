@@ -16,6 +16,9 @@
     .social-media-icons {
       align-items: center;
       justify-content: center;
+      @media(min-width: 768px) {
+        cursor: pointer;
+      }
       .social-media {
         border-radius: 50%;
         background-color: #414141;

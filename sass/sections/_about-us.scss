@@ -24,7 +24,7 @@
       .intro-right {
         line-height: $line-height;
         padding-right: 20px;
-        text-align: left;
+        text-align: center;
         P {
           color: grey;
           font-family: $font-serif;
@@ -33,7 +33,7 @@
       .intro-left {
         line-height: $line-height;
         padding-left: 20px;
-        text-align: right;
+        text-align: center;
         P {
           color: grey;
           font-family: $font-serif;
@@ -52,7 +52,7 @@
           object-fit: cover;
         }
       }
-      .yellow-circle {
+      &.yellow-circle {
         display: flex;
         justify-content: flex-end;
       }
@@ -103,7 +103,7 @@
       .intro-right {
         text-align: right;
       }
-      .yellow-circle {
+      &.yellow-circle {
         display: flex;
         justify-content: center;
       }

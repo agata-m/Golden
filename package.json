@@ -25,9 +25,9 @@
     "build-prod:test-html": "nu-html-checker docs/*.html",
     "watch": "npm-run-all build -p watch:*",
     "watch:sassprefixer": "npm-run-all -p watch-sass watch-autoprefixer",
-    "watch-sass": "onchange sass/style.scss -- node-sass --output-style expanded --source-map true -o css sass",
+    "watch-sass": "onchange sass/**/*.scss -- node-sass --output-style expanded --source-map true -o css sass",
     "watch-autoprefixer": "onchange css/style.css -- autoprefixer-cli -o css/style.css css/style.css",
-    "watch:browsersync": "browser-sync start --server --files sass/*.scss *.html"
+    "watch:browsersync": "browser-sync start --server --files sass/**/*.scss *.html"
   },
   "repository": {
     "type": "git",
